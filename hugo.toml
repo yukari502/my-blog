@@ -1,6 +1,7 @@
 baseURL = 'https://yukari502.github.io/'
 languageCode = 'en-us'
 title = 'Yukari‘s site'
+<<<<<<< HEAD
 theme = 'hugo-book'
 
 [params]
@@ -8,3 +9,6 @@ theme = 'hugo-book'
 # BookSection告诉主题，你所有的内容都在根目录下
 # 这会让主题在左侧菜单中正确地显示您的所有文章
 BookSection = "*" 
+=======
+theme = "hugo-book"
+>>>>>>> f1a2707 (1)
