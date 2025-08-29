@@ -1,10 +1,23 @@
-baseURL = 'https://yukari502.github.io/'
-languageCode = 'en-us'
-title = 'Yukari‘s site'
-theme = 'hugo-book'
+baseURL = "https://yukari502.github.io/"
+languageCode = "en-us" # 您可以改为 "zh-cn"
+title = "My New Blog" # 替换为您自己的博客标题
+theme = "PaperMod" # 确保这行是 PaperMod
 
 [params]
-# 这是 hugo-book 主题的核心参数
-# BookSection告诉主题，你所有的内容都在根目录下
-# 这会让主题在左侧菜单中正确地显示您的所有文章
-BookSection = "*" 
+# 这是一个非常基础的 PaperMod 配置，您可以稍后查看其文档添加更多功能
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+
+# 配置主页自动显示文章列表
+[params.homeInfoParams]
+Title = "Hi there 👋"
+Content = "Welcome to my blog"
+
+# 配置菜单
+[[menu.main]]
+identifier = "archives"
+name = "Archives"
+url = "/archives/"
+weight = 10
