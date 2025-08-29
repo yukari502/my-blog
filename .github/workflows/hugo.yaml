@@ -30,8 +30,8 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest' # 或者指定一个版本，如 '0.111.3'
-          # extended: true # 如果你的主题需要 Sass/SCSS 功能，请取消此行注释
+          hugo-version: 'latest'
+          extended: true # <--- 就是这里，解除这一行的注释
 
       # 步骤3: 构建网站
       - name: Build
