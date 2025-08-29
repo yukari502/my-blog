@@ -45,7 +45,7 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           # 要部署到的目标仓库git add .
           external_repository: yukari502/yukari502.github.io 
-          # 要部署到的目标分支
+          # 要部署到的目标分支 sdf
           publish_branch: main # 或者 master
           # 要发布的内容所在的目录 (Hugo 默认生成到 public)
           publish_dir: ./public
