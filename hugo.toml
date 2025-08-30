@@ -1,23 +1,39 @@
+# 这是根据您提供的教程和 even 主题文档优化的配置
+
 baseURL = "https://yukari502.github.io/"
-languageCode = "en-us" # 您可以改为 "zh-cn"
-title = "My New Blog" # 替换为您自己的博客标题
-theme = "PaperMod" # 确保这行是 PaperMod
+languageCode = "zh-cn" # 设置为中文
+title = "Yukari's Blog" # 请替换为您自己的博客标题
+theme = "even" # 确保主题是 even
+
+hasCJKLanguage = true # 支持中日韩语言
+paginate = 5 # 每页显示 5 篇文章
+
+# 主菜单
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "Posts"
+  url = "/post/"
+  weight = 2
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 3
+[[menu.main]]
+  name = "Categories"
+  url = "/categories/"
+  weight = 4
 
 [params]
-# 这是一个非常基础的 PaperMod 配置，您可以稍后查看其文档添加更多功能
-ShowReadingTime = true
-ShowShareButtons = true
-ShowPostNavLinks = true
-ShowBreadCrumbs = true
+  # even 主题的特定参数
+  since = "2024" # 网站成立年份
+  author = "yukari502" # 您的名字
 
-# 配置主页自动显示文章列表
-[params.homeInfoParams]
-Title = "Hi there 👋"
-Content = "Welcome to my blog"
-
-# 配置菜单
-[[menu.main]]
-identifier = "archives"
-name = "Archives"
-url = "/archives/"
-weight = 10
+  # 社交链接
+  [params.social]
+    GitHub = "yukari502"
+    # 你可以添加其他社交链接，例如:
+    # Twitter = "your_twitter_id"
+    # Email = "your_email@example.com"
